@@ -1,0 +1,46 @@
+#about-detailed-section {
+  padding-bottom: 6rem;
+  .about-detailed-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+
+    .left-col {
+      .about-article {
+        .about-article-heading {
+          margin-bottom: 1rem;
+        }
+
+        .about-article-text {
+          line-height: 1.6;
+          margin-bottom: 2rem;
+        }
+      }
+      .about-article-img {
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+      }
+    }
+
+    .right-col {
+      .about-article {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid $light-grey-color;
+
+        .about-article-heading {
+          margin-bottom: 0.5rem;
+        }
+
+        .about-article-text {
+          line-height: 1.6;
+          padding-bottom: 1rem;
+          font-size: 0.9rem;
+        }
+      }
+      .about-article:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+}

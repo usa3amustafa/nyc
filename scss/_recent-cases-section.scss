@@ -1,0 +1,44 @@
+#recent-cases-section {
+  background-image: url('../../img/lady-justice.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-bottom: 6rem;
+
+  .recent-cases-section-title {
+    margin-bottom: 2rem;
+  }
+
+  .case-results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin-bottom: 2rem;
+
+    .case-result {
+      padding: 2rem;
+      background-color: $sec-color;
+      border-top-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+
+      .recent-result {
+        border-bottom: 1px solid $pri-color;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .recent-result-heading {
+        margin-bottom: 1rem;
+      }
+
+      .recent-result-desc {
+        line-height: 1.6;
+
+        .read-more-link {
+          color: blue;
+        }
+      }
+    }
+  }
+}

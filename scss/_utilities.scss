@@ -1,0 +1,94 @@
+body {
+  font-family: $font-family-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 500;
+}
+
+.container {
+  width: 95%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color-dark;
+}
+
+.btn-cta {
+  padding: 1rem 3rem;
+  background-color: $pri-color;
+  display: inline-block;
+  border-radius: 5rem;
+  color: $text-color-dark;
+  text-transform: capitalize;
+}
+
+.heading {
+  font-family: $font-family-headings;
+}
+
+section {
+  padding-top: 6rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  font-family: $font-family-headings;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-controls {
+  @include flex($justify: space-between);
+  .prev-next-btns {
+    @include flex($gap: 1rem);
+
+    .slider-btn {
+      border: 2px solid $pri-color;
+      color: $text-color-dark;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 5rem;
+
+      @include flex();
+    }
+  }
+}
+
+.key-points-single-col {
+  .point {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+
+    @include flex($gap: 0.5rem, $justify: flex-start, $align: center);
+    .point-icon {
+      color: $pri-color;
+    }
+  }
+}
+
+.border-img {
+  position: relative;
+}

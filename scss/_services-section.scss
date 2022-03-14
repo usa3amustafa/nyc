@@ -1,0 +1,30 @@
+.services-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+
+  .service {
+    padding: 8rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue-color-dark;
+    color: $sec-color;
+
+    outline: 2px solid $sec-color;
+    outline-offset: -0.75rem;
+
+    transition: all 0.3s ease-in-out;
+
+    .service-heading {
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  .service:hover {
+    color: $blue-color-dark;
+    background-color: $pri-color;
+    outline-color: $blue-color-dark;
+  }
+}

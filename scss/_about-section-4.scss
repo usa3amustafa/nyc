@@ -1,0 +1,22 @@
+#about-section-4 {
+  background-color: $blue-color-dark;
+  padding-bottom: 6rem;
+  .about-section-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+
+    .left-col {
+      color: $light-grey-color-2;
+
+      .about-section-4-title {
+        margin-bottom: 1rem;
+      }
+
+      .about-section-4-desc {
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
